@@ -1,0 +1,23 @@
+STUDIO VASO - WINDOWS TEST - November 19, 2026
+
+1. Extract All from this ZIP. Keep the Studio-Vaso folder together.
+2. Install Python 3.11 or newer from https://www.python.org/downloads/windows/
+   For 3MF export, also install Blender from https://www.blender.org/download/
+   The launcher can use Python bundled with a standard Blender installation.
+3. Double-click Start Studio Vaso.bat in the extracted folder.
+4. Leave its window open. Open http://127.0.0.1:8780/ if the browser does not open.
+5. Follow Cup & fit > Handle > Surface & color > Artwork > Review.
+   Add artwork adds elements; Edit selected adjusts the selected element.
+   On your cup lists elements. Download project saves an editable backup.
+6. Export 3MF may take several minutes. Keep the browser and launcher open.
+   Inspect colors, layers and supports in the slicer before printing.
+
+No Google sign-in is needed to RUN the app. A Drive login may be needed to
+DOWNLOAD a privately shared file. Local designs stay in your own browser.
+This package includes all current artwork, the new layout and full geometry.
+Scene background images are compressed to make the download smaller.
+No developer projects, past exports, tunnel software or passwords are included.
+
+If Python is not found, install Python then close and reopen the launcher.
+If company policy blocks installation or scripts, contact your IT administrator.
+For feedback: include a screenshot, saved project JSON and exact error message.

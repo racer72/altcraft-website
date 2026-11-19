@@ -1,0 +1,187 @@
+/* A consistent shell around the playful themed rooms. */
+body.flow-workspace{--ink:#283d35;--green:#315e50;--paper:#faf9f5;--gold:#9a753e;--line:#dddcd4;--flow-muted:#69776f;--designer-border:#deded5;background:#f3f3ee;color:#283d35;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+body.flow-workspace header{height:auto;min-height:70px;padding:12px 24px;gap:18px;background:#faf9f5;color:#283d35;border-bottom:1px solid #deded5}
+body.flow-workspace .brandmark{width:40px;height:40px;background:#315e50;color:#f2dfaf;border-radius:12px;font-size:21px}
+body.flow-workspace .brand h1{font-size:23px;color:#263d34;white-space:nowrap}
+body.flow-workspace .brand h1 span{color:#263d34}
+body.flow-workspace .brand .local-save-status{font-size:9px;color:#708075;margin-top:3px}
+body.flow-workspace .header-actions{gap:7px;margin-left:auto}
+body.flow-workspace button,body.flow-workspace select{background:#fffefa;border:1px solid #d8ddd3;color:#30473b;border-radius:7px;box-shadow:none}
+body.flow-workspace button:hover{background:#eef2e9;border-color:#9fb09c}
+body.flow-workspace button.primary,body.flow-workspace #export{background:#315e50;color:#fff;border-color:#315e50}
+body.flow-workspace button.primary:hover,body.flow-workspace #export:hover{background:#244b3e}
+body.flow-workspace button:focus-visible,body.flow-workspace input:focus-visible,body.flow-workspace select:focus-visible{outline:2px solid #b98e4e;outline-offset:2px}
+body.flow-workspace button:disabled{opacity:.4}
+body.flow-workspace .header-actions button{font-size:11px;padding:9px 11px}
+body.flow-workspace .header-actions #gettingStarted{display:none}
+body.flow-workspace .flow-project-name{display:flex;flex-direction:column;gap:3px;margin:0 10px 0 0;font-size:8px;letter-spacing:1.5px;color:#718075;min-width:120px;max-width:230px;flex:1}
+body.flow-workspace #projectName{width:100%;margin:0;padding:4px 0;background:transparent;border:0;border-bottom:1px solid #d4dacf;border-radius:0;color:#30473b;font:13px system-ui,sans-serif;letter-spacing:0}
+body.flow-workspace main{height:calc(100dvh - var(--flow-header-height,70px));display:grid;grid-template-columns:340px minmax(0,1fr);grid-template-rows:72px minmax(0,1fr);min-height:0}
+body.flow-workspace .workflow-rail{grid-column:1/-1;grid-row:1;padding:10px 24px;background:#f3f3ed!important;border-right:0;border-bottom:1px solid #deded5;overflow:visible;display:block}
+body.flow-workspace .workflow-intro,body.flow-workspace .rail-view-heading{display:none}
+body.flow-workspace #workflowSteps{height:100%;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;max-width:1150px;margin:auto}
+body.flow-workspace .workflow-step{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;background:transparent;padding:10px 12px;border-radius:9px;box-shadow:none;text-align:left;color:#66766b}
+body.flow-workspace .workflow-step strong{font:500 12px system-ui,sans-serif;letter-spacing:0}
+body.flow-workspace .workflow-step small{display:none}
+body.flow-workspace .step-index{width:24px;height:24px;border-radius:50%;font:500 11px system-ui,sans-serif;transform:none;background:#e8e9df;color:#73806f;border-color:#d9dfd1}
+body.flow-workspace .workflow-step.active{color:#254b3a;background:#e4ecdf;border-color:#c3d1ba;box-shadow:none}
+body.flow-workspace .workflow-step.active .step-index{background:#315e50;color:#fff;border-color:#315e50}
+body.flow-workspace .library-sidebar{grid-column:1;grid-row:2;display:flex;flex-direction:column;overflow:hidden;border:0;border-right:1px solid #deded5;background:#faf9f5!important;min-height:0;min-width:0}
+body.flow-workspace .designer-tools-heading{padding:22px 24px 18px;flex:none;border-color:#e3e3da}
+body.flow-workspace .designer-tools-heading h2{font:400 26px Georgia,serif;margin:8px 0;color:#293f33}
+body.flow-workspace .eyebrow{font-size:8px;color:#94815f;letter-spacing:1.6px}
+body.flow-workspace .designer-tools-heading #stepHelp{font-size:12px;color:#6c7b6e;line-height:1.6;margin:0}
+body.flow-workspace .library-sidebar .panel{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#c1c8ba transparent}
+body.flow-workspace .library-sidebar .panel[hidden],body.flow-workspace .library-sidebar>.inspector[hidden]{display:none!important}
+body.flow-workspace .library-sidebar .panel section{padding:19px 24px;border-bottom:1px solid #e7e6de;background:transparent;min-width:0}
+body.flow-workspace .library-sidebar h3,body.flow-workspace .library-sidebar h2{color:#304536}
+body.flow-workspace .library-sidebar h3{font-size:12px;font-weight:650;letter-spacing:0}
+body.flow-workspace .library-sidebar p,body.flow-workspace .library-sidebar label,body.flow-workspace .help{color:#6a786d;font-size:12px;line-height:1.6}
+body.flow-workspace .library-sidebar input:not([type=checkbox]):not([type=range]):not([type=color]),body.flow-workspace .library-sidebar select{background:#fffefa;color:#344a3b;border:1px solid #d5ddd0;padding:10px;border-radius:7px;font:12px system-ui,sans-serif}
+body.flow-workspace #parts .section-head{gap:9px}
+body.flow-workspace #yourVasoSection .section-head{display:grid;grid-template-columns:1fr auto}
+body.flow-workspace #yourVasoSection #editProfile{grid-column:1/-1;width:100%;background:#eff2e9;border-color:#d3ddca;margin-bottom:4px}
+body.flow-workspace #parts .field{display:flex;flex-direction:column;gap:7px;margin:13px 0}
+body.flow-workspace #parts select{max-width:100%;width:100%}
+body.flow-workspace #profileName{font-size:19px;margin:10px 0}
+body.flow-workspace #profileDimensions{display:grid;grid-template-columns:1fr auto;gap:9px;font-size:11px}
+body.flow-workspace #profileDimensions dt{color:#7b887c}
+body.flow-workspace #profileDimensions dd{color:#354b3a;text-align:right;margin:0}
+body.flow-workspace .fit-confidence{color:#997b42!important;font-size:10px!important}
+body.flow-workspace .creator-choices,body.flow-workspace .creator-finish-cards{gap:9px}
+body.flow-workspace .creator-choice{background:#fffefa!important;color:#5e775b!important;border-color:#d8decf!important;min-height:84px;border-radius:9px!important;padding:12px 7px!important;box-shadow:none}
+body.flow-workspace .creator-choice.selected{background:#eaf0e2!important;border-color:#8ca783!important;box-shadow:inset 0 -2px #6c8960}
+body.flow-workspace .creator-choice:hover:not(:disabled){background:#f0f3e8!important;border-color:#9ab18a!important;transform:none}
+body.flow-workspace .creator-choice span{font-size:11px}
+body.flow-workspace #handles #handleNote{padding:11px;background:#efeee5;border-radius:6px;color:#758068}
+body.flow-workspace #finishes .finish-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+body.flow-workspace #finishes .finish-actions button{font-size:10px;white-space:normal;padding:10px 6px}
+body.flow-workspace #finishes .creator-finish-group h3{font-size:12px!important;margin:0 0 12px}
+body.flow-workspace .flow-color-section .field{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:13px 0;font-size:11px}
+body.flow-workspace .flow-color-section select{max-width:140px}
+body.flow-workspace #finishes .filament-settings{background:#f2f3eb;border:0;border-top:1px solid #e2e5db;flex:none}
+body.flow-workspace #finishes .filament-settings summary{padding:16px 24px;color:#536c4b;font-size:11px}
+body.flow-workspace #finishes .filament-settings section{padding:0 24px 20px}
+body.flow-workspace #flowArtTabs{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin:14px 23px 2px;padding:4px;border:1px solid #e0e3d7;background:#eeefe7;border-radius:9px;flex:none}
+body.flow-workspace #flowArtTabs[hidden]{display:none!important}
+body.flow-workspace #flowArtTabs button{border:0;background:transparent;font-size:11px;padding:10px 6px;color:#798573;border-radius:6px}
+body.flow-workspace #flowArtTabs button[aria-selected=true]{background:#fffefa;color:#31553e;box-shadow:0 1px 5px #233c2810}
+body.flow-workspace .library-sidebar>.inspector{position:static;display:flex;flex:1;flex-direction:column;width:auto;min-height:0;overflow:hidden;box-shadow:none;border:0;background:#faf9f5!important}
+body.flow-workspace .inspector>.inspector-heading{display:none}
+body.flow-workspace .inspector .flow-selection-label{padding:18px 24px 0;flex:none}
+.flow-selection-label span{display:block;font-size:8px;letter-spacing:1.5px;color:#999c8c}
+.flow-selection-label strong{display:block;font-size:15px;font-weight:500;color:#354c3b;margin-top:6px;overflow-wrap:anywhere}
+body.flow-workspace .inspector #editor{padding:12px 24px 20px;flex:1;overflow:auto;min-height:0;scrollbar-width:thin;background:transparent}
+body.flow-workspace .inspector #editor .section-head{margin:0 0 8px;justify-content:flex-end}
+body.flow-workspace .inspector #selectedTitle{display:none}
+body.flow-workspace .inspector #duplicate,body.flow-workspace .inspector #remove{font-size:10px;padding:5px 9px;background:#f0f1e8;border:1px solid #d9dfd0}
+body.flow-workspace .inspector #remove{color:#9d6658}
+body.flow-workspace .inspector .locked-art-note{color:#758061;background:#f0f2e7;border:1px solid #dde4d0;font-size:11px;line-height:1.5;padding:10px;border-radius:7px;margin:10px 0 15px}
+body.flow-workspace .ease-segmented button{font-size:11px;padding:8px 12px}
+body.flow-workspace .ease-segmented button[aria-pressed=true]{color:#315e50;background:#e5eddd;border-color:#b4c6a5}
+body.flow-workspace .inspector .designer-range-row>input[type=number]{width:80px;padding:8px;background:#fffefa;color:#344b3a;border:1px solid #cbd7c2}
+body.flow-workspace .inspector .range-field{margin:17px 0}
+body.flow-workspace .inspector .range-field>span{font-size:11px;color:#5d6e5b}
+body.flow-workspace input[type=range]{accent-color:#718b62}
+body.flow-workspace .designer-placement-grid{gap:6px;margin:9px 0}
+body.flow-workspace .designer-placement-grid button{font-size:10px;padding:9px 4px;background:#edf1e6;border-color:#d3deca}
+body.flow-workspace .designer-placement h3{color:#7c8975!important;font-size:10px!important;font-weight:500}
+body.flow-workspace .designer-placement .designer-snap{font-size:10px;color:#7e8c77;gap:7px}
+body.flow-workspace #editor #artFootprint{font-size:10px;color:#969d8c;margin:6px 0 10px}
+body.flow-workspace .designer-rename summary,body.flow-workspace #advancedArtTools>summary{font-size:11px;color:#778766}
+body.flow-workspace #editor #artName{background:#fffefa;color:#334937;border-color:#d5ddcf;margin:5px 0 10px}
+body.flow-workspace .inspector .selected-color{background:#f0f2e8;border-radius:7px;padding:11px}
+body.flow-workspace .inspector #objectColor{width:100%;max-width:none;color:#344b3b;background:#fffefa}
+body.flow-workspace .inspector .segmented{background:#eaf0e2;border:1px solid #d9e1d2;border-radius:7px;padding:3px}
+body.flow-workspace .inspector .segmented button{background:transparent;border:0;color:#7c8a74;font-size:11px;border-radius:5px}
+body.flow-workspace .inspector .segmented button.active{background:#fffefa;color:#31533e;box-shadow:0 1px 4px #34512d12}
+body.flow-workspace .inspector .mirror-artwork-controls>span{color:#77886e}
+body.flow-workspace .inspector #advancedArtTools button{font-size:10px}
+body.flow-workspace .inspector .flow-editor-tip{font-size:10px;color:#8a9580;line-height:1.5;margin-top:20px;border-top:1px solid #e0e3d7;padding-top:14px}
+body.flow-workspace #design>.creator-room{padding:18px 24px 14px;margin:0;border:0;border-bottom:1px solid #e3e6db}
+body.flow-workspace #design>.creator-room span{font-size:8px;letter-spacing:1.5px;color:#929c87}
+body.flow-workspace #creatorTheme{width:100%;padding:10px 12px;margin-top:8px;background:#fffefa;color:#35513d;border:1px solid #d3ddcb;border-radius:7px;font:12px system-ui,sans-serif}
+body.flow-workspace #design .art-destination{padding:14px 24px;min-width:0;width:auto}
+body.flow-workspace .art-destination h3{font-size:11px}
+body.flow-workspace .art-destination .help{font-size:10px}
+body.flow-workspace #assetSection>.help{display:none}
+body.flow-workspace #assetSection{padding:18px 24px}
+body.flow-workspace #assetGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+body.flow-workspace #artSearch{background:#fffefa;color:#3b5140;border:1px solid #d3ddca;border-radius:7px;padding:11px;font-size:12px}
+body.flow-workspace .designer-search label{color:#718367;font-size:11px}
+body.flow-workspace #artSearchStatus{color:#9aa18e;font-size:10px;margin-bottom:13px}
+body.flow-workspace .asset-card>button:first-child{background:#fffefa;color:#57704d;border:1px solid #d9e0d1;border-radius:9px;min-height:107px;padding:12px 7px;box-shadow:none;font-size:11px}
+body.flow-workspace .asset-card>button:first-child:hover{background:#eff3e8;border-color:#9cb48f}
+body.flow-workspace .shape-grid svg{fill:#68845a}
+body.flow-workspace #shapeLibrary button{background:#fffefa;color:#637f56;border-color:#d4dfca;border-radius:8px}
+body.flow-workspace #assetSection .import-row button{font-size:10px;padding:8px}
+body.flow-workspace .pack-palette{padding-top:10px;border-top:1px solid #e4e6db}
+body.flow-workspace .pack-palette #packPaletteStatus{color:#8a967e;font-size:10px}
+body.flow-workspace .pack-palette[data-palette-state=blocked] #packPaletteStatus{color:#9f6e43}
+body.flow-workspace #assetMessage{color:#919c83;font-size:10px}
+body.flow-workspace .presets [data-preset]{background:#fffefa;border-color:#d9e2cf;border-radius:8px;color:#58734b}
+body.flow-workspace .flow-library-actions{padding:16px 24px 22px}
+body.flow-workspace #clear{padding:9px 12px;color:#9f6e5d;background:#f7eeE6;border-color:#e7d9cc;font-size:10px}
+body.flow-workspace #flowLayerDrawer{flex:none;background:#f1f2e9;border-top:1px solid #dde3d4;max-height:38%;overflow:auto}
+body.flow-workspace #flowLayerDrawer>summary{display:flex;align-items:center;gap:8px;list-style:none;padding:14px 24px;cursor:pointer;font-size:11px;color:#5c7352}
+#flowLayerDrawer>summary::-webkit-details-marker{display:none}
+#flowLayersCount{display:inline-grid;place-items:center;min-width:19px;height:19px;border-radius:5px;background:#e0e8d7;color:#627a54;font-size:10px}
+.flow-drawer-chevron{margin-left:auto;color:#859878;transform:rotate(180deg)}
+#flowLayerDrawer[open] .flow-drawer-chevron{transform:none}
+body.flow-workspace #flowLayerDrawer .layer-shelf{padding:0 18px 12px;background:transparent;border:0}
+body.flow-workspace #flowLayerDrawer .section-head{display:none}
+body.flow-workspace #flowLayerDrawer #objects{max-height:160px;overflow:auto}
+body.flow-workspace #flowLayerDrawer .object-row{background:#fffefa!important;border-color:#dce4d3!important;border-radius:6px;padding:6px 8px}
+body.flow-workspace #flowLayerDrawer .object-row.selected{background:#e9f0e0!important;border-color:#a8c093!important}
+body.flow-workspace #flowLayerDrawer .object-row button{color:#4c6842;background:transparent;border:0;font-size:11px}
+body.flow-workspace #flowLayerDrawer .object-row small{color:#8a9a7c;font-size:9px}
+body.flow-workspace #flowLayerDrawer #layerSearch{background:#fffefa;color:#526b47;border-color:#d6e0cb}
+body.flow-workspace #flowLayersEmpty{font-size:11px;padding:0 24px 15px;margin:0}
+#flowLayersEmpty[hidden]{display:none}
+.flow-step-footer{flex:none;padding:14px 22px;border-top:1px solid #e0e5d6;background:#faf9f5}
+body.flow-workspace .flow-step-footer .step-navigation{display:flex;flex-direction:row;gap:9px;padding:0;margin:0}
+body.flow-workspace .flow-step-footer button{padding:11px 10px;font-size:11px;flex:none}
+body.flow-workspace .flow-step-footer #nextStep{flex:1}
+body.flow-workspace .workspace{grid-column:2;grid-row:2;height:auto;min-height:0;min-width:0;position:relative;background:#e9eee3}
+body.flow-workspace .flow-canvas-bar{position:absolute;top:16px;left:20px;right:20px;z-index:5;display:flex;align-items:center;gap:12px;pointer-events:none}
+body.flow-workspace #flowCanvasProject{display:none}
+body.flow-workspace .flow-canvas-bar>*{pointer-events:auto}
+body.flow-workspace #railViews{display:flex;flex-direction:row;gap:3px;padding:4px;background:#faf9f2ed;border:1px solid #d7decd;border-radius:9px;box-shadow:0 3px 13px #102a1610}
+body.flow-workspace #railViews button{font-size:11px;white-space:nowrap;padding:8px 12px;color:#77876a;background:transparent;border:0;border-radius:6px}
+body.flow-workspace #railViews button.active{color:#315d43;background:#e5eedb}
+body.flow-workspace .flow-view-options{position:relative;margin-left:auto;background:#faf9f2ed;border:1px solid #d7decd;border-radius:8px;color:#657d56;box-shadow:0 3px 13px #102a1610}
+.flow-view-options>summary{padding:11px 13px;font-size:11px;cursor:pointer;list-style:none}
+.flow-view-options-content{position:absolute;right:0;top:43px;width:226px;background:#faf9f5;padding:13px;border-radius:9px;border:1px solid #d7dfce;box-shadow:0 8px 30px #1c331b25;display:flex;flex-direction:column;gap:9px}
+.flow-view-options:not([open]) .flow-view-options-content{display:none}
+body.flow-workspace .flow-view-options #themeBackdropToggle,body.flow-workspace .flow-view-options #roomMotionToggle{position:static;top:auto;right:auto;padding:9px 10px;background:#edf2e6;color:#5d7a4c;border:1px solid #d2dfc7;font-size:11px}
+body.flow-workspace .flow-view-options label{display:flex;align-items:center;gap:8px;font-size:11px;color:#667f54;margin:0}
+body.flow-workspace .canvas-title{display:none}
+body.flow-workspace .designer-fit-summary{left:20px;top:auto;bottom:70px;max-width:calc(100% - 40px);padding:10px 13px;border-radius:7px;background:#f9faf1ed;border:1px solid #dae2d0;color:#58714a}
+body.flow-workspace .designer-fit-summary strong{font-size:11px;color:#45663b}
+body.flow-workspace .designer-fit-summary span,body.flow-workspace .designer-fit-summary small{color:#829373;font-size:10px}
+body.flow-workspace .viewport-foot,body.flow-workspace .designer-keyboard-help{display:none}
+body.flow-workspace .viewbar{bottom:18px;left:20px;right:20px;top:auto}
+body.flow-workspace .view-tools{gap:5px}
+body.flow-workspace .view-tools button{background:#faf9f1ed;color:#627c52;border-color:#d4dfc9;font-size:10px;padding:8px 11px}
+body.flow-workspace #toggleDesignDetails,body.flow-workspace #closeDesignDetails,body.flow-workspace #toggleInspector{display:none!important}
+body.flow-workspace .flow-review-card{display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid #e1e6d8}
+.flow-review-card>div{flex:1;min-width:0}
+.flow-review-card strong{font-size:11px;color:#57714b}
+body.flow-workspace .flow-review-card p{font-size:11px;line-height:1.5;color:#879779;margin:5px 0 0}
+.flow-review-card button{font-size:10px;padding:6px 9px}
+body.flow-workspace #reviewPanel .review-start{padding:20px 24px}
+body.flow-workspace #reviewPanel .review-start h2{font:400 22px Georgia,serif;color:#395531}
+body.flow-workspace #reviewPanel .review-start .eyebrow{color:#9b997c}
+body.flow-workspace #reviewPanel .review-start p{font-size:12px;color:#839475}
+body.flow-workspace .flow-review-save,body.flow-workspace #guidedExport{display:block;width:100%;margin-top:18px;padding:12px;font-size:12px}
+body.flow-workspace #guidedExport{margin-top:9px}
+body.flow-workspace #toast{background:#315e50;color:#fff;border-color:#7c9f68;border-radius:8px}
+@media(min-width:1500px){body.flow-workspace main{grid-template-columns:370px minmax(0,1fr)}body.flow-workspace #assetGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1100px){body.flow-workspace header{gap:12px;padding:12px 18px}body.flow-workspace .flow-project-name{max-width:175px;min-width:100px}body.flow-workspace .header-actions button{font-size:10px;padding:8px}body.flow-workspace main{grid-template-columns:315px minmax(0,1fr)}body.flow-workspace .workflow-rail{padding:10px 16px}.flow-canvas-bar{gap:8px}body.flow-workspace #railViews button{padding:8px 9px;font-size:10px}}
+@media(max-width:900px){body.flow-workspace .brand h1{font-size:20px}body.flow-workspace .header-actions #loadProject{display:none}body.flow-workspace .flow-project-name{max-width:160px}body.flow-workspace .header-actions button{padding:8px 7px}body.flow-workspace main{grid-template-columns:300px minmax(0,1fr)}body.flow-workspace .workflow-step{gap:6px;padding:8px 6px}body.flow-workspace .workflow-step strong{font-size:11px}body.flow-workspace .designer-tools-heading{padding:18px 20px 16px}body.flow-workspace .library-sidebar .panel section{padding:16px 20px}body.flow-workspace .flow-canvas-bar{left:12px;right:12px;gap:6px;flex-wrap:wrap}body.flow-workspace #railViews button{padding:8px;font-size:9px}body.flow-workspace .flow-view-options>summary{padding:10px;font-size:10px}body.flow-workspace .viewbar{left:12px;right:12px}body.flow-workspace .view-tools button{padding:7px;font-size:9px}body.flow-workspace .designer-fit-summary{left:12px;bottom:65px;max-width:calc(100% - 24px)}}
+@media(max-width:760px){body.flow-workspace header{padding:10px 14px;flex-wrap:wrap;gap:9px 14px;min-height:65px}body.flow-workspace .brand{flex:none}body.flow-workspace .flow-project-name{margin-left:auto;max-width:210px;flex:1}body.flow-workspace .header-actions{width:100%;margin:0;justify-content:flex-end;gap:7px}body.flow-workspace .header-actions #loadProject{display:inline-block}body.flow-workspace .header-actions button{font-size:10px;padding:8px 10px}body.flow-workspace main{grid-template-columns:minmax(0,1fr);grid-template-rows:62px minmax(230px,44%) minmax(0,1fr)}body.flow-workspace .workflow-rail{grid-column:1;grid-row:1;padding:8px 10px}body.flow-workspace #workflowSteps{gap:4px}body.flow-workspace .workflow-step{flex-direction:column;gap:4px;padding:4px 3px;border-radius:7px}body.flow-workspace .workflow-step strong{font-size:9px;text-align:center}body.flow-workspace .step-index{width:18px;height:18px;font-size:9px}body.flow-workspace .workspace{grid-column:1;grid-row:2;min-height:0;height:auto}body.flow-workspace .library-sidebar{grid-column:1;grid-row:3;min-height:0;height:auto;display:flex;overflow:hidden;border-top:1px solid #dce3d3;border-right:0}body.flow-workspace .designer-tools-heading{padding:14px 20px 12px}body.flow-workspace .designer-tools-heading h2{font-size:22px;margin:5px 0}body.flow-workspace .designer-tools-heading #stepHelp{font-size:11px;line-height:1.5}body.flow-workspace #flowArtTabs{margin:9px 18px 0}body.flow-workspace #flowArtTabs button{padding:7px;font-size:10px}body.flow-workspace .flow-step-footer{padding:10px 18px}body.flow-workspace .flow-step-footer button{padding:9px 10px;font-size:10px}body.flow-workspace #flowLayerDrawer>summary{padding:10px 20px;font-size:10px}body.flow-workspace .designer-fit-summary{display:none}body.flow-workspace .flow-canvas-bar{top:10px;left:12px;right:12px;flex-wrap:nowrap}body.flow-workspace #railViews{padding:3px}body.flow-workspace #railViews button{font-size:10px;padding:7px 11px}body.flow-workspace .flow-view-options>summary{font-size:10px;padding:10px}body.flow-workspace .viewbar{bottom:10px}body.flow-workspace .view-tools button{font-size:9px;padding:6px 9px}body.flow-workspace .flow-selection-label{padding:12px 20px 0}body.flow-workspace .flow-selection-label strong{font-size:13px}body.flow-workspace .flow-selection-label span{font-size:7px}body.flow-workspace .inspector #editor{padding:10px 20px 18px}}
+@media(max-width:430px){body.flow-workspace .brand h1{font-size:19px}body.flow-workspace .brandmark{width:34px;height:34px}body.flow-workspace .flow-project-name{max-width:145px;min-width:90px}body.flow-workspace .header-actions{gap:4px;justify-content:space-between}body.flow-workspace .header-actions button{padding:7px 6px;font-size:9px}body.flow-workspace .workflow-step strong{font-size:8px}body.flow-workspace #railViews button{font-size:9px;padding:7px 9px}body.flow-workspace .flow-view-options>summary{padding:9px;font-size:9px}}
+
+body.flow-workspace #creatorTheme{background:#fffef9!important;color:#29473d!important;border:1px solid #bdc9b7!important;color-scheme:light}body.flow-workspace #creatorTheme option{background:#fffef9;color:#29473d}
+
+@media(max-width:760px){body.flow-workspace .workflow-rail{height:62px;min-height:0;max-height:62px;box-sizing:border-box;grid-row:1 / 2}body.flow-workspace #workflowSteps{height:46px;min-height:0}body.flow-workspace .workflow-step{min-height:0;height:46px}}

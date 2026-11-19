@@ -1,0 +1,13 @@
+Studio Vaso bundled text fonts
+
+Clean bold: Liberation Sans Bold. Copyright and SIL Open Font License in Liberation-LICENSE.txt. Unmodified font from the installed PDF.js standard font distribution.
+Playful chunky: Lilita One Regular. Unmodified Google Fonts font; license in lilitaone-OFL.txt.
+Tall block: Anton Regular. Unmodified Google Fonts font; license in anton-OFL.txt.
+Classic serif: Bree Serif Regular. Unmodified Google Fonts font; license in breeserif-OFL.txt.
+
+Official source files for the three Google Fonts families:
+https://github.com/google/fonts/tree/main/ofl/lilitaone
+https://github.com/google/fonts/tree/main/ofl/anton
+https://github.com/google/fonts/tree/main/ofl/breeserif
+
+The fonts are included locally and do not require an online font service. These user-facing style labels do not rename or modify the font files. Lettering is raster-traced into stored geometric outlines for project portability. Check thin details at the chosen print size. Font uploads and installed-font access are not part of this release.

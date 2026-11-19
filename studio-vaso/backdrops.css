@@ -1,0 +1,10 @@
+#viewport{background-size:cover;background-position:center;background-repeat:no-repeat}
+.backdrop-toggle{position:absolute;right:24px;top:78px;z-index:5;background:#fffdf4e8;border:1px solid #c8c5b8;color:#465650;font-size:10px;padding:7px 10px;box-shadow:0 2px 12px #473b2410}
+.themed-backdrop .canvas-title{background:linear-gradient(90deg,#fffdf6f5,#fffdf6dd 72%,#fffdf6bb);padding:12px 14px;border-radius:10px;left:12px;right:12px;top:10px;box-shadow:0 2px 16px #473b2408}
+.themed-backdrop .canvas-title #stepHelp{color:#526154}
+.themed-backdrop .viewport-foot{background:#fffdf5db;border-radius:7px;padding:5px 8px;left:14px;bottom:9px;right:auto}
+@media(max-width:650px){.backdrop-toggle{right:10px;top:108px;font-size:8px;padding:5px 6px}.themed-backdrop .canvas-title{padding:8px}.themed-backdrop .viewport-foot{left:6px;font-size:8px}}
+.themed-backdrop .canvas-title{background:none;box-shadow:none;padding:0;align-items:flex-start}
+.themed-backdrop .canvas-title>div{flex:0 1 390px;max-width:390px;background:#fffdf6ed;padding:12px 14px;border-radius:10px;box-shadow:0 2px 16px #473b2408}
+.themed-backdrop .canvas-title .clear-design{margin-left:auto;margin-top:12px}
+@media(max-width:650px){.themed-backdrop .canvas-title>div{max-width:190px;padding:8px}.themed-backdrop .canvas-title .clear-design{margin-top:6px}}
